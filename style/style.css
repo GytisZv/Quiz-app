@@ -1,5 +1,80 @@
-@import "./reset.css";
+@import './reset.css';
 .container {
+  padding-top: 200px;
   width: 80%;
   margin: 0 auto;
+  /* background-color: gray; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'title title'
+    'firstQ secondQ';
+  gap: 15px;
+}
+.titleBox {
+  padding: 15px;
+  font-size: 50px;
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 50px;
+  border: 1px solid aqua;
+  border-radius: 10px;
+  background: rgba(210, 255, 82, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(210, 255, 82, 1) 21%,
+    rgba(189, 248, 77, 1) 46%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  -webkit-box-shadow: 8px 5px 5px 7px rgba(209, 207, 209, 0.48);
+  -moz-box-shadow: 8px 5px 5px 7px rgba(209, 207, 209, 0.48);
+  box-shadow: 8px 5px 5px 7px rgba(209, 207, 209, 0.48);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(21%, rgba(210, 255, 82, 1)),
+    color-stop(46%, rgba(189, 248, 77, 1)),
+    color-stop(100%, rgba(145, 232, 66, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(210, 255, 82, 1) 21%,
+    rgba(189, 248, 77, 1) 46%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(210, 255, 82, 1) 21%,
+    rgba(189, 248, 77, 1) 46%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(210, 255, 82, 1) 21%,
+    rgba(189, 248, 77, 1) 46%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(210, 255, 82, 1) 21%,
+    rgba(189, 248, 77, 1) 46%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+}
+.answer {
+  text-align: center;
+  font-size: 20px;
+  background-color: #e2e3dd6e;
+  border-radius: 10px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.answer1Box {
+  grid-area: firstQ;
+}
+.answer2Box {
+  background-color: #e2e3dd6e;
 }
